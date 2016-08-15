@@ -7,8 +7,8 @@ image_resource:
     repository: java
     tag: latest
 
-input:
-  - name: boot-concourse
+#input:
+ # - name: boot-concourse
 
 run:
   path: "boot-concourse/gradlew"

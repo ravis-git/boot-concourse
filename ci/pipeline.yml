@@ -13,4 +13,4 @@ jobs:
       trigger: true
     - task: package
       privileged: true
-      file: source-code/ci/tasks/build.yml
+      file: boot-concourse/ci/build.yml
