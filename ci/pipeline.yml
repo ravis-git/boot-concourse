@@ -1,14 +1,16 @@
 ---
 resources:
   - name: boot-concourse
-  type: git
-  source:
-    url: https://github.com/ravis-git/boot-concourse.git
+    type: git
+    source:
+      uri: https://github.com/ravis-git/boot-concourse.git
+      branch: master
 
 jobs:
-  - name: test-boot-concourse
-  plan:
+  - name: build-test
+    plan:
     - get: boot-concourse
-    trigger: true
-    - task:
-      file: boot-concourse/ci/build-test.yml
+      trigger: true
+    - task: package
+      privileged: true
+      file: source-code/ci/tasks/build.yml
