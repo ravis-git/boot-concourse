@@ -1,0 +1,14 @@
+---
+resources:
+  - name: boot-concourse
+  type: git
+  source:
+    url: https://github.com/ravis-git/boot-concourse.git
+
+jobs:
+  - name: test-boot-concourse
+  plan:
+    - get: boot-concourse
+    trigger: true
+    - task:
+      file: boot-concourse/ci/build-test.yml
