@@ -17,6 +17,7 @@ echo " ====  sbin  ==== "
 ls /usr/sbin
 
 /usr/sbin/adduser gradle -s /bin/bash
+echo "NewPass" |passwd gradle --stdin
 
 su gradle
 
