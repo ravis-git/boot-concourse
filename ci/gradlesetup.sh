@@ -20,13 +20,13 @@ ls /usr/sbin
 
 echo "user created"
 
-echo "NewPass" | passwd gradle --stdin
+#echo "NewPass" | passwd gradle --stdin
 
 
-su gradle
+#su gradle
 
-ls /home
+#ls /home
 
-touch .gradle/gradle.properties && echo 'cfUsername={{cf-username}} \ncfPassword={{cf-password}}' >> .gradle/gradle.properties
+#touch .gradle/gradle.properties && echo 'cfUsername={{cf-username}} \ncfPassword={{cf-password}}' >> .gradle/gradle.properties
 
-less .gradle/gradle.properties
+#less .gradle/gradle.properties
