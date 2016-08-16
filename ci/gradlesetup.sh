@@ -16,7 +16,7 @@ echo " ====  sbin  ==== "
 
 ls /usr/sbin
 
-/usr/sbin/adduser gradle -m -s /bin/bash
+/usr/sbin/adduser gradle -s /bin/bash
 
 su gradle
 
