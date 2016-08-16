@@ -14,7 +14,7 @@ cat /etc/passwd
 
 echo "user created"
 
-#su gradle
+su - gradle
 
 echo "user changed"
 
