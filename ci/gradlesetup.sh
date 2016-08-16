@@ -12,9 +12,11 @@ cat /etc/passwd
 
 ls /usr/bin
 
+echo " ====  sbin  ==== "
+
 ls /usr/sbin
 
-/usr/bin/useradd gradle -m -s /bin/bash
+/usr/sbin/adduser gradle -m -s /bin/bash
 
 su gradle
 
