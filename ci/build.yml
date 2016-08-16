@@ -13,6 +13,9 @@ inputs:
   - name: boot-concourse
 
 run:
+  path: "touch ~/.gradle/gradle.properties && echo 'cfUsername={{cf-username}} \ncfPassword={{cf-password}}' >> ~/.gradle/gradle.properties"
+
+run:
   path: "boot-concourse/gradlew"
   args: ["--build-file", "boot-concourse/build.gradle", "assemble", "cfLogin", "cfPush", "-Dusername={{cf-username}}", "-Dpassword={{cf-password}}"]
 
