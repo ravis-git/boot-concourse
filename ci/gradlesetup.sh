@@ -18,9 +18,9 @@ ls /usr/sbin
 
 /usr/sbin/adduser gradle -s /bin/bash
 
-echo "user created"
+#echo "user created"
 
-#echo "NewPass" | passwd gradle --stdin
+echo "NewPass" | passwd gradle --stdin gradle
 
 
 #su gradle
