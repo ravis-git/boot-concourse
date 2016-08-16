@@ -10,20 +10,13 @@ ls /
 
 cat /etc/passwd
 
-ls /usr/bin
-
-echo " ====  sbin  ==== "
-
-ls /usr/sbin
-
 /usr/sbin/adduser gradle -s /bin/bash -D
 
-#echo "user created"
-
-#echo "NewPass"
-
+echo "user created"
 
 su gradle
+
+echo "user changed"
 
 cd
 
