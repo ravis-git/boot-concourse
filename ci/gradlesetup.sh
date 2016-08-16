@@ -6,6 +6,8 @@ touch .gradle/gradle.properties && echo 'cfUsername={{cf-username}} \ncfPassword
 
 pwd
 
-ls /
+cd /home
+
+ls
 
 less .gradle/gradle.properties
