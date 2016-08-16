@@ -12,7 +12,7 @@ inputs:
 
 run:
   path: "boot-concourse/gradlew"
-  args: ["--build-file", "boot-concourse/build.gradle", "assemble", "cfLogin", "cfPush", "-Du", "{{cf.username}}", "-Dp", "{{cf.password}}"]
+  args: ["--build-file", "boot-concourse/build.gradle", "assemble", "cfLogin", "cfPush", "-Du", "{{cf-username}}", "-Dp", "{{cf-password}}"]
 
 params:
   TERM: -dumb
