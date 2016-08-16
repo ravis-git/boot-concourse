@@ -20,4 +20,4 @@ su - gradle -c 'touch ~/.gradle/gradle.properties && echo "cfUsername={{cf-usern
 
 echo "file created"
 
-su - gradle -c less ~/.gradle/gradle.properties
+su - gradle -c 'less ~/.gradle/gradle.properties'
