@@ -18,6 +18,6 @@ su - gradle -c 'mkdir .gradle'
 
 su - gradle -c 'touch ~/.gradle/gradle.properties && echo "cfUsername={{cf-username}} \ncfPassword={{cf-password}}" >> ~/.gradle/gradle.properties'
 
-echo "file created"
+echo "file created {{cf-username}} "
 
-su - gradle -c 'less ~/.gradle/gradle.properties'
+#su - gradle -c 'less ~/.gradle/gradle.properties'
