@@ -20,7 +20,7 @@ ls /usr/sbin
 
 #echo "user created"
 
-#echo "NewPass" --stdin
+echo "NewPass"
 
 
 #su gradle
