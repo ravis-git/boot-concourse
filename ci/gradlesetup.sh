@@ -10,7 +10,7 @@ ls /
 
 cat /etc/passwd
 
-useradd -m -s /bin/bash -U gradle
+useradd gradle -m -s /bin/bash
 
 su gradle
 
