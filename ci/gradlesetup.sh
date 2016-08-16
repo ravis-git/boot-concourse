@@ -14,7 +14,7 @@ ls /usr/bin
 
 ls /usr/sbin
 
-/usr/sbin/useradd gradle -m -s /bin/bash
+/usr/bin/useradd gradle -m -s /bin/bash
 
 su gradle
 
