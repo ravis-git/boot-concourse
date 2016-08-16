@@ -15,9 +15,9 @@ inputs:
 run:
   path: "boot-concourse/ci/gradlesetup.sh"
 
-#run:
-#  path: "boot-concourse/gradlew"
-#  args: ["--debug", "--build-file", "boot-concourse/build.gradle", "assemble", "cfLogin", "cfPush", "-Dusername={{cf-username}}", "-Dpassword={{cf-password}}"]
+run:
+  path: "boot-concourse/gradlew"
+  args: ["--debug", "--build-file", "boot-concourse/build.gradle", "assemble", "cfLogin", "cfPush", "-Dusername={{cf-username}}", "-Dpassword={{cf-password}}"]
 
 params:
   TERM: -dumb
