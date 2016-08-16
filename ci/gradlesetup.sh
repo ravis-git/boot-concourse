@@ -16,17 +16,19 @@ echo " ====  sbin  ==== "
 
 ls /usr/sbin
 
-/usr/sbin/adduser gradle -s /bin/bash -m
+/usr/sbin/adduser gradle -s /bin/bash -D
 
 #echo "user created"
 
-echo "NewPass"
+#echo "NewPass"
 
 
-#su gradle
+su gradle
 
-#ls /home
+cd
 
-#touch .gradle/gradle.properties && echo 'cfUsername={{cf-username}} \ncfPassword={{cf-password}}' >> .gradle/gradle.properties
+pwd
 
-#less .gradle/gradle.properties
+touch .gradle/gradle.properties && echo 'cfUsername={{cf-username}} \ncfPassword={{cf-password}}' >> .gradle/gradle.properties
+
+less .gradle/gradle.properties
