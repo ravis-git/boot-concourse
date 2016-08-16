@@ -2,6 +2,8 @@
 
 echo 'gradle properties file setup'
 
-touch ~/.gradle/gradle.properties && echo 'cfUsername={{cf-username}} \ncfPassword={{cf-password}}' >> ~/.gradle/gradle.properties
+touch .gradle/gradle.properties && echo 'cfUsername={{cf-username}} \ncfPassword={{cf-password}}' >> .gradle/gradle.properties
 
-less ~/.gradle/gradle.properties
+pwd
+
+less .gradle/gradle.properties
