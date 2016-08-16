@@ -16,11 +16,11 @@ echo " ====  sbin  ==== "
 
 ls /usr/sbin
 
-/usr/sbin/adduser gradle -s /bin/bash
+/usr/sbin/adduser gradle -s /bin/bash -m
 
 #echo "user created"
 
-echo "NewPass" --stdin
+#echo "NewPass" --stdin
 
 
 #su gradle
