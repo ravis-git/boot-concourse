@@ -18,8 +18,6 @@ su gradle
 
 echo "user changed"
 
-cd
-
 pwd
 
 touch .gradle/gradle.properties && echo 'cfUsername={{cf-username}} \ncfPassword={{cf-password}}' >> .gradle/gradle.properties
