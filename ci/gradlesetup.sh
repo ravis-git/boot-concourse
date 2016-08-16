@@ -14,6 +14,6 @@ cat /etc/passwd
 
 echo "user created"
 
-su - gradle -c 'touch .gradle/gradle.properties && echo "cfUsername={{cf-username}} \ncfPassword={{cf-password}}" >> .gradle/gradle.properties'
+su - gradle -c 'touch ~/.gradle/gradle.properties && echo "cfUsername={{cf-username}} \ncfPassword={{cf-password}}" >> .gradle/gradle.properties'
 
-su - gradle -c less .gradle/gradle.properties
+su - gradle -c less ~/.gradle/gradle.properties
